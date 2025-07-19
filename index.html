@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="main-box">
+        <div class="upload-box">
+            <input type="file" id="file" accept="image/*" hidden>
+            <img src="./cloud-arrow-up.svg">
+            <p>Upload Img For Resizing</p>
+        </div>
+        <div class="controll-tolls">
+            <div class="column left">
+                <div class="row width">
+                    <label for="width">Width</label>
+                    <input type="number" id="width">
+                </div>
+                <div class="row-width">
+                    <input type="checkbox" id="ratio" checked>
+                    <label for="ratio">Lock apect ratio <small>(Rec)</small></label>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="row height">
+                    <label for="height">Height</label>
+                    <input type="number" id="height">
+                </div>
+                <div class="row-height">
+                    <input type="checkbox" id="quality">
+                    <label for="quality">Reduce quality</label>
+                </div>
+            </div>
+        </div>
+        <button class="download">DOWNLOAD IMAGE</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
